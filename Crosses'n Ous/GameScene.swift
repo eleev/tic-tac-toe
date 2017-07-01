@@ -10,12 +10,19 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
+    
+    // MARK: - Properties
+    
     var gameBoard: Board!
     var stateMachine: GKStateMachine!
     var ai: GKMinmaxStrategist!
-    
+
+    // MARK: - Lifecycle
     
     override func didMove(to view: SKView) {
+        super.didMove(to: view)
+        debugPrint("GameScene -> didMove")
+        
         sceneSetup()
         boardSetup()
         gameplaySetup()
@@ -72,7 +79,8 @@ extension GameScene {
      */
     func sceneSetup() {
         self.enumerateChildNodes(withName: "//grid*") { (node, stop) in
-            if let node = node as? SKSpriteNode{
+            debugPrint("child node is : ", node)
+            if let node = node as? SKSpriteNode {
                 node.color = UIColor.clear
             }
         }
