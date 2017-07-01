@@ -17,6 +17,8 @@
 		A9A602E51F07CAEB00EC8B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A602E31F07CAEB00EC8B79 /* LaunchScreen.storyboard */; };
 		A9A602F01F07CAEB00EC8B79 /* Crosses_n_OusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */; };
 		A9A602FB1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A602FA1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift */; };
+		A9A6030A1F07CD1800EC8B79 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A603091F07CD1800EC8B79 /* GameplayKit.framework */; };
+		A9A6030C1F07CD2900EC8B79 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A9A602F61F07CAEB00EC8B79 /* Crosses'n OusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crosses'n OusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A602FA1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosses_n_OusUITests.swift; sourceTree = "<group>"; };
 		A9A602FC1F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A603091F07CD1800EC8B79 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
+		A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A6030C1F07CD2900EC8B79 /* SpriteKit.framework in Frameworks */,
+				A9A6030A1F07CD1800EC8B79 /* GameplayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,7 @@
 				A9A602EE1F07CAEB00EC8B79 /* Crosses'n OusTests */,
 				A9A602F91F07CAEB00EC8B79 /* Crosses'n OusUITests */,
 				A9A602D21F07CAEB00EC8B79 /* Products */,
+				A9A603081F07CD1800EC8B79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,15 @@
 				A9A602FC1F07CAEB00EC8B79 /* Info.plist */,
 			);
 			path = "Crosses'n OusUITests";
+			sourceTree = "<group>";
+		};
+		A9A603081F07CD1800EC8B79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */,
+				A9A603091F07CD1800EC8B79 /* GameplayKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
