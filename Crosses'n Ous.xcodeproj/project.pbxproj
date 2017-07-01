@@ -23,6 +23,7 @@
 		A9A603121F07E2C700EC8B79 /* StartGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A603111F07E2C700EC8B79 /* StartGameState.swift */; };
 		A9A603141F07E2F300EC8B79 /* EndGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A603131F07E2F300EC8B79 /* EndGameState.swift */; };
 		A9A603161F07E31F00EC8B79 /* ActiveGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A603151F07E31F00EC8B79 /* ActiveGameState.swift */; };
+		A9A6031B1F07F6FD00EC8B79 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9A6031A1F07F6FD00EC8B79 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A9A603111F07E2C700EC8B79 /* StartGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameState.swift; sourceTree = "<group>"; };
 		A9A603131F07E2F300EC8B79 /* EndGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameState.swift; sourceTree = "<group>"; };
 		A9A603151F07E31F00EC8B79 /* ActiveGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveGameState.swift; sourceTree = "<group>"; };
+		A9A6031A1F07F6FD00EC8B79 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		A9A602C81F07CAEB00EC8B79 = {
 			isa = PBXGroup;
 			children = (
+				A9A6031A1F07F6FD00EC8B79 /* .gitignore */,
 				A9A602D31F07CAEB00EC8B79 /* Crosses'n Ous */,
 				A9A602EE1F07CAEB00EC8B79 /* Crosses'n OusTests */,
 				A9A602F91F07CAEB00EC8B79 /* Crosses'n OusUITests */,
@@ -300,6 +303,7 @@
 				A9A6030E1F07DBB000EC8B79 /* GameScene.sks in Resources */,
 				A9A602E21F07CAEB00EC8B79 /* Assets.xcassets in Resources */,
 				A9A602E51F07CAEB00EC8B79 /* LaunchScreen.storyboard in Resources */,
+				A9A6031B1F07F6FD00EC8B79 /* .gitignore in Resources */,
 				A9A602D91F07CAEB00EC8B79 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
