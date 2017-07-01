@@ -484,7 +484,7 @@
 		A9A603001F07CAEB00EC8B79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "Crosses'n Ous/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -498,7 +498,7 @@
 		A9A603011F07CAEB00EC8B79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "Crosses'n Ous/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
