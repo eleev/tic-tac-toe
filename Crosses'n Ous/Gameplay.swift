@@ -336,7 +336,7 @@ class Board: NSObject, NSCopying, GKGameModel{
         return false
     }
     
-    func determineIfWinner()->(GameState, GKGameModelPlayer?){
+    func determineIfWinner() -> (GameState, GKGameModelPlayer?){
         // check rows for a winner
         if board[0].value != .none && (board[0].value == board[1].value && board[0].value == board[2].value){
             guard let winner: GKGameModelPlayer = getPlayerAtBoardCell(board[0]) else{ return (.draw, nil)}
