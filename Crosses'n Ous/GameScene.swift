@@ -26,6 +26,7 @@ class GameScene: SKScene {
         sceneSetup()
         boardSetup()
         gameplaySetup()
+        maxLookAheadDepth()
         stateMachinesSetup()
     }
 
@@ -111,8 +112,40 @@ extension GameScene {
      */
     func gameplaySetup() {
         ai = GKMinmaxStrategist()
-        ai.maxLookAheadDepth = 9
         ai.randomSource = GKARC4RandomSource()
+    }
+    
+    /*
+     Generates a difficulty level for the AI based on the max number of levels that to look ahead to the decision making tree.
+     */
+    func maxLookAheadDepth() {
+        func difficultyLevel() -> Int {
+            return Int(1 + arc4random_uniform(9)) // 9 is the max level for decision making tree since there are only 9 cells in the play grid
+        }
+        
+        func toDifficultyLevel(_ level: Int) -> DifficultyLevel {
+            switch level {
+            case 1: return .one
+            case 2: return .two
+            case 3: return .three
+            case 4: return .four
+            case 5: return .five
+            case 6: return .six
+            case 7: return .seven
+            case 8: return .eight
+            case 9: return .nine
+            default: return .ufo
+            }
+        }
+        
+        
+        let diffLevel = difficultyLevel()
+        ai.maxLookAheadDepth = diffLevel
+        
+        guard let difficultyLabelNode = self.childNode(withName: "Difficulty_level") as? SKLabelNode else {
+            fatalError("Could not find Dicculty label of type SKLabelNode")
+        }
+        difficultyLabelNode.text = "Difficulty: \(toDifficultyLevel(diffLevel).rawValue)"
     }
     
     /*
@@ -131,4 +164,20 @@ extension GameScene {
         stateMachine.enter(StartGameState.self)
     }
     
+}
+
+/*
+ Describes all possible diffibulty levels for the minimax strategy
+ */
+enum DifficultyLevel: String {
+    case one = "Newborn"
+    case two = "Toddler"
+    case three = "Dummy"
+    case four = "Pupil"
+    case five = "Student"
+    case six = "B.S."
+    case seven = "M.S."
+    case eight = "PhD"
+    case nine = "Nikola Tesla"
+    case ufo = "UFO"
 }

@@ -27,6 +27,9 @@ class StartGameState: GKState{
     
     override func update(deltaTime seconds: TimeInterval) {
         resetGame()
+        // re-generate the max look ahead depth for the ai
+        scene?.maxLookAheadDepth()
+        
         self.stateMachine?.enter(ActiveGameState.self)
     }
     

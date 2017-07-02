@@ -172,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				A9A603111F07E2C700EC8B79 /* StartGameState.swift */,
-				A9A603131F07E2F300EC8B79 /* EndGameState.swift */,
 				A9A603151F07E31F00EC8B79 /* ActiveGameState.swift */,
+				A9A603131F07E2F300EC8B79 /* EndGameState.swift */,
 			);
 			name = "State Machines";
 			sourceTree = "<group>";
@@ -590,6 +590,7 @@
 				A9A603011F07CAEB00EC8B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n OusTests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +599,7 @@
 				A9A603041F07CAEB00EC8B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9A603051F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n OusUITests" */ = {
 			isa = XCConfigurationList;
@@ -606,6 +608,7 @@
 				A9A603071F07CAEB00EC8B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
