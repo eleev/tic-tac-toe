@@ -55,7 +55,8 @@ class StartGameState: GKState{
         
         let board = [top_left, top_middle, top_right, middle_left, center, middle_right, bottom_left, bottom_middle, bottom_right]
         
-        self.scene?.gameBoard = Board(gameboard: board)
+        let currentPlayer = scene?.flipCoin() ?? .human
+        self.scene?.gameBoard = Board(gameboard: board, currentPlayer: currentPlayer)
         
         self.scene?.enumerateChildNodes(withName: "//grid*") { (node, stop) in
             if let node = node as? SKSpriteNode{
