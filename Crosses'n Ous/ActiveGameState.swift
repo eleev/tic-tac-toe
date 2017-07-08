@@ -130,7 +130,7 @@ class ActiveGameState: GKState{
 extension ActiveGameState {
     
     /*
-     Highlights player's label indicating which turn is which 
+     Highlights player's label indicating which turn is which
      */
     fileprivate func highlightActivePlayer(_ player: CurrentPlayer, with color: UIColor = .blue) -> () -> ()? {
         let labelNodeName = player == .human ? "player1_label_node" : "player2_label_node"
