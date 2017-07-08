@@ -78,6 +78,10 @@ class ActiveGameState: GKState{
         }
             
         else if self.scene!.gameBoard!.isPlayerTwoTurn(){
+            // Change the font type for AI agent
+            let completion = highlightActivePlayer(.machine, with: .blue)
+            
+            
             //AI moves
             self.scene?.isUserInteractionEnabled = false
             
@@ -107,6 +111,9 @@ class ActiveGameState: GKState{
                     self.scene!.gameBoard!.togglePlayer()
                     self.waitingOnPlayer = false
                     self.scene?.isUserInteractionEnabled = true
+                    
+                    // Completes the visual feedback to the human-player
+                    completion()
                 }
             }
         }
@@ -114,5 +121,33 @@ class ActiveGameState: GKState{
             self.waitingOnPlayer = false
             self.scene?.isUserInteractionEnabled = true
         }
+    }
+}
+
+/*
+ Extension that adds helper methods for visual feedback for human-player
+ */
+extension ActiveGameState {
+    
+    /*
+     Highlights player's label indicating which turn is which 
+     */
+    fileprivate func highlightActivePlayer(_ player: CurrentPlayer, with color: UIColor = .blue) -> () -> ()? {
+        let labelNodeName = player == .human ? "player1_label_node" : "player2_label_node"
+        
+        var font: UIColor?
+        var label: SKLabelNode?
+        
+        if let playerNode = self.scene?.childNode(withName: labelNodeName) as? SKLabelNode {
+            label = playerNode
+            font = playerNode.fontColor
+            playerNode.fontColor = color
+        }
+        
+        let completion = {
+            label?.fontColor = font
+        }
+        
+        return completion
     }
 }
