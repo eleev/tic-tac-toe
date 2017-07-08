@@ -24,7 +24,6 @@ class GameScene: SKScene {
         debugPrint("GameScene -> didMove")
         
         sceneSetup()
-        boardSetup()
         gameplaySetup()
         maxLookAheadDepth()
         stateMachinesSetup()
@@ -75,6 +74,9 @@ class GameScene: SKScene {
 }
 
 extension GameScene {
+    
+    // MARK: - Setup
+    
     /* 
      Sets up the scene. Do all additional initialization logic here related to the scene.
      */
@@ -88,32 +90,32 @@ extension GameScene {
     }
     
     /*
-     Sets up the game board. Do all additional initialization logic here related to the game board.
-     */
-    func boardSetup() {
-        let top_left: BoardCell  = BoardCell(value: .none, node: "//*top_left")
-        let top_middle: BoardCell = BoardCell(value: .none, node: "//*top_middle")
-        let top_right: BoardCell = BoardCell(value: .none, node: "//*top_right")
-        let middle_left: BoardCell = BoardCell(value: .none, node: "//*middle_left")
-        let center: BoardCell = BoardCell(value: .none, node: "//*center")
-        let middle_right: BoardCell = BoardCell(value: .none, node: "//*middle_right")
-        let bottom_left: BoardCell = BoardCell(value: .none, node: "//*bottom_left")
-        let bottom_middle: BoardCell = BoardCell(value: .none, node: "//*bottom_middle")
-        let bottom_right: BoardCell = BoardCell(value: .none, node: "//*bottom_right")
-        
-        let board = [top_left, top_middle, top_right, middle_left, center, middle_right, bottom_left, bottom_middle, bottom_right]
-        
-        gameBoard = Board(gameboard: board)
-
-    }
-    
-    /*
      Sets up gameplay for the game. For this particular case it is minmax strategy. Do all additional initialization logic here related to the gameplay phase.
      */
     func gameplaySetup() {
         ai = GKMinmaxStrategist()
         ai.randomSource = GKARC4RandomSource()
     }
+ 
+    
+    /*
+     Sets up state machines for the game. For this particular case there are three states such as:
+     - Start game state
+     - Active game state
+     - End game state
+     Do any additional initialization logic here related to the state machines.
+     */
+    func stateMachinesSetup() {
+        let beginGameState = StartGameState(scene: self)
+        let activeGameState = ActiveGameState(scene: self)
+        let endGameState = EndGameState(scene: self)
+        
+        stateMachine = GKStateMachine(states: [beginGameState, activeGameState, endGameState])
+        stateMachine.enter(StartGameState.self)
+    }
+    
+    // MARK: - Utilities
+    
     
     /*
      Generates a difficulty level for the AI based on the max number of levels that to look ahead to the decision making tree.
@@ -149,19 +151,10 @@ extension GameScene {
     }
     
     /*
-     Sets up state machines for the game. For this particular case there are three states such as:
-     - Start game state
-     - Active game state
-     - End game state
-     Do any additional initialization logic here related to the state machines.
+     Randomly returns current player type - human or machine
      */
-    func stateMachinesSetup() {
-        let beginGameState = StartGameState(scene: self)
-        let activeGameState = ActiveGameState(scene: self)
-        let endGameState = EndGameState(scene: self)
-        
-        stateMachine = GKStateMachine(states: [beginGameState, activeGameState, endGameState])
-        stateMachine.enter(StartGameState.self)
+    func flipCoin() -> CurrentPlayer {
+        return drand48() >= 0.5 ? .human : .machine
     }
     
 }
