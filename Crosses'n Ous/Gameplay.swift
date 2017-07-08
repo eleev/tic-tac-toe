@@ -9,6 +9,11 @@
 import GameplayKit
 import Foundation
 
+enum CurrentPlayer: Int {
+    case human = 0
+    case machine = 1
+}
+
 enum PlayerType: Int{
     case x
     case o
@@ -121,8 +126,9 @@ class Board: NSObject, NSCopying, GKGameModel{
         super.init()
     }
     
-    init(gameboard: [BoardCell]){
-        self.currentPlayer = _players[0]
+    init(gameboard: [BoardCell], currentPlayer: CurrentPlayer = .human){
+        debugPrint("curent player is : ", currentPlayer.rawValue)
+        self.currentPlayer = _players[currentPlayer.rawValue]
         self.board = gameboard
         self.currentScoreForPlayerOne = 0
         self.currentScoreForPlayerTwo = 0
