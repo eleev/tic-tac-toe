@@ -32,6 +32,12 @@ class GameViewController: UIViewController {
 //            view.showsNodeCount = true
 //        }
         
+//        if UIDevice.current.userInterfaceIdiom == .pad {
+//            
+//        } else if UIDevice.current.userInterfaceIdiom == .phone {
+//        
+//        }
+        
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
             let skView = self.view as! SKView
@@ -42,7 +48,7 @@ class GameViewController: UIViewController {
             skView.ignoresSiblingOrder = true
             
             /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .aspectFill
+            scene.scaleMode = .aspectFit
             
             skView.presentScene(scene)
         }
