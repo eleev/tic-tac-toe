@@ -14,4 +14,6 @@ Class Tic Tac Toe reincarnation with AI and state machines. The app is ready-mad
 ## Author
 `Astemir Eleev` - iOS Software Engineer
 
+## Licence 
+The project is available under `MIT` [licence](https://github.com/jVirus/crosses-and-zeros-ios-game/blob/master/LICENSE).
 
