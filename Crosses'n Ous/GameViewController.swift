@@ -11,47 +11,22 @@ import SpriteKit
 
 class GameViewController: UIViewController {
 
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if let view = self.view as! SKView? {
-//            // Load the SKScene from 'GameScene.sks'
-//            if let scene = SKScene(fileNamed: "GameScene") {
-//                // Set the scale mode to scale to fit the window
-//                scene.scaleMode = .aspectFill
-//                
-//                debugPrint("GmaeScene is about to be loaded from GameViewController")
-//                // Present the scene
-//                view.presentScene(scene)
-//            }
-//            
-//            /* Sprite Kit applies additional optimizations to improve rendering performance */
-//            view.ignoresSiblingOrder = true
-//            
-//            view.showsFPS = true
-//            view.showsNodeCount = true
-//        }
+        let isLandscape = UIDevice.current.userInterfaceIdiom == .phone
+        debugPrint(#function + " is landscape orietnation : ", isLandscape)
+        loadSceneForOrientation(isLandscape: !isLandscape)
         
-//        if UIDevice.current.userInterfaceIdiom == .pad {
-//            
-//        } else if UIDevice.current.userInterfaceIdiom == .phone {
-//        
-//        }
-        
-        if let scene = GameScene(fileNamed:"GameScene") {
-            // Configure the view.
-            let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .aspectFit
-            
-            skView.presentScene(scene)
-        }
+         // Current implementation is commented because it cannot be fully supported yet. The reason is the app does not support game state persistence - it means that after the UI is rotated, the states of UI elements are reset. In order to bring full support for autorotation feature, game state persistence needs to be implemented first.
+        /*
+        // Registed notification observer to react on device rotation changes
+        let defaultNotifCenter = NotificationCenter.default
+        defaultNotifCenter.addObserver(self, selector: #selector(GameViewController.rotated),
+                                       name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+         */
     }
 
     override var shouldAutorotate: Bool {
@@ -61,17 +36,56 @@ class GameViewController: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .portrait
-        } else {
-            return .all
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            return .landscape
+        }
+        return .all
     }
 
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    // MARK: - Rotation
+    
+    @objc func rotated() {
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+            print(#function + " landscape")
+            loadSceneForOrientation(isLandscape: true)
+        }
+
+        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+            print(#function + " portrait")
+            loadSceneForOrientation(isLandscape: false)
+        }
+    }
+    
+    // MARK: - Scene management
+    
+    private func loadSceneForOrientation(isLandscape: Bool) {
+        var scene = GameScene(fileNamed: "GameScene-Portrait")
+        
+        if isLandscape {
+            scene = GameScene(fileNamed: "GameScene-Landscape")
+        }
+        
+        guard let unwrappedScene = scene else {
+            fatalError(#function + " could not load game scene, the app will crash")
+        }
+        
+        // Configure the view.
+        let skView = self.view as! SKView
+        skView.showsFPS = true
+        skView.showsNodeCount = true
+        
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        skView.ignoresSiblingOrder = true
+        
+        /* Set the scale mode to scale to fit the window */
+        unwrappedScene.scaleMode = .aspectFit
+        
+        skView.presentScene(unwrappedScene)
+    }
+
 }
