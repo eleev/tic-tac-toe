@@ -15,7 +15,6 @@
 		A9A602E21F07CAEB00EC8B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A602E11F07CAEB00EC8B79 /* Assets.xcassets */; };
 		A9A602E51F07CAEB00EC8B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A602E31F07CAEB00EC8B79 /* LaunchScreen.storyboard */; };
 		A9A602F01F07CAEB00EC8B79 /* Crosses_n_OusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */; };
-		A9A602FB1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A602FA1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift */; };
 		A9A6030A1F07CD1800EC8B79 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A603091F07CD1800EC8B79 /* GameplayKit.framework */; };
 		A9A6030C1F07CD2900EC8B79 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */; };
 		A9A6030E1F07DBB000EC8B79 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9A6030D1F07DBB000EC8B79 /* GameScene.sks */; };
@@ -28,13 +27,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		A9A602EC1F07CAEB00EC8B79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9A602C91F07CAEB00EC8B79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9A602D01F07CAEB00EC8B79;
-			remoteInfo = "Crosses'n Ous";
-		};
-		A9A602F71F07CAEB00EC8B79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A9A602C91F07CAEB00EC8B79 /* Project object */;
 			proxyType = 1;
@@ -56,9 +48,6 @@
 		A9A602EB1F07CAEB00EC8B79 /* Crosses'n OusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crosses'n OusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosses_n_OusTests.swift; sourceTree = "<group>"; };
 		A9A602F11F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9A602F61F07CAEB00EC8B79 /* Crosses'n OusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crosses'n OusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9A602FA1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosses_n_OusUITests.swift; sourceTree = "<group>"; };
-		A9A602FC1F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A603091F07CD1800EC8B79 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		A9A6030D1F07DBB000EC8B79 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -86,13 +75,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A602F31F07CAEB00EC8B79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,7 +84,6 @@
 				A9A6031A1F07F6FD00EC8B79 /* .gitignore */,
 				A9A602D31F07CAEB00EC8B79 /* Crosses'n Ous */,
 				A9A602EE1F07CAEB00EC8B79 /* Crosses'n OusTests */,
-				A9A602F91F07CAEB00EC8B79 /* Crosses'n OusUITests */,
 				A9A602D21F07CAEB00EC8B79 /* Products */,
 				A9A603081F07CD1800EC8B79 /* Frameworks */,
 			);
@@ -113,7 +94,6 @@
 			children = (
 				A9A602D11F07CAEB00EC8B79 /* Crosses'n Ous.app */,
 				A9A602EB1F07CAEB00EC8B79 /* Crosses'n OusTests.xctest */,
-				A9A602F61F07CAEB00EC8B79 /* Crosses'n OusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,15 +119,6 @@
 				A9A602F11F07CAEB00EC8B79 /* Info.plist */,
 			);
 			path = "Crosses'n OusTests";
-			sourceTree = "<group>";
-		};
-		A9A602F91F07CAEB00EC8B79 /* Crosses'n OusUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A9A602FA1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift */,
-				A9A602FC1F07CAEB00EC8B79 /* Info.plist */,
-			);
-			path = "Crosses'n OusUITests";
 			sourceTree = "<group>";
 		};
 		A9A603081F07CD1800EC8B79 /* Frameworks */ = {
@@ -227,24 +198,6 @@
 			productReference = A9A602EB1F07CAEB00EC8B79 /* Crosses'n OusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A9A602F51F07CAEB00EC8B79 /* Crosses'n OusUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9A603051F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n OusUITests" */;
-			buildPhases = (
-				A9A602F21F07CAEB00EC8B79 /* Sources */,
-				A9A602F31F07CAEB00EC8B79 /* Frameworks */,
-				A9A602F41F07CAEB00EC8B79 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9A602F81F07CAEB00EC8B79 /* PBXTargetDependency */,
-			);
-			name = "Crosses'n OusUITests";
-			productName = "Crosses'n OusUITests";
-			productReference = A9A602F61F07CAEB00EC8B79 /* Crosses'n OusUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,23 +205,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Astemir Eleev";
 				TargetAttributes = {
 					A9A602D01F07CAEB00EC8B79 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = EK3QDL7K69;
+						DevelopmentTeam = T3K58FE38R;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A9A602EA1F07CAEB00EC8B79 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = T3K58FE38R;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A9A602D01F07CAEB00EC8B79;
-					};
-					A9A602F51F07CAEB00EC8B79 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T3K58FE38R;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A9A602D01F07CAEB00EC8B79;
 					};
@@ -289,7 +238,6 @@
 			targets = (
 				A9A602D01F07CAEB00EC8B79 /* Crosses'n Ous */,
 				A9A602EA1F07CAEB00EC8B79 /* Crosses'n OusTests */,
-				A9A602F51F07CAEB00EC8B79 /* Crosses'n OusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,13 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A9A602E91F07CAEB00EC8B79 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9A602F41F07CAEB00EC8B79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,14 +288,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A602F21F07CAEB00EC8B79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9A602FB1F07CAEB00EC8B79 /* Crosses_n_OusUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -362,11 +295,6 @@
 			isa = PBXTargetDependency;
 			target = A9A602D01F07CAEB00EC8B79 /* Crosses'n Ous */;
 			targetProxy = A9A602EC1F07CAEB00EC8B79 /* PBXContainerItemProxy */;
-		};
-		A9A602F81F07CAEB00EC8B79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9A602D01F07CAEB00EC8B79 /* Crosses'n Ous */;
-			targetProxy = A9A602F71F07CAEB00EC8B79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,7 +328,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -408,7 +338,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -451,7 +385,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -459,7 +395,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -488,28 +428,30 @@
 		A9A603001F07CAEB00EC8B79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "Crosses'n Ous/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = astemir.eleev.io.CrossesOus;
+				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.io.CrossesOus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		A9A603011F07CAEB00EC8B79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = "Crosses'n Ous/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = astemir.eleev.io.CrossesOus;
+				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.io.CrossesOus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -523,7 +465,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "astemir.eleev.io.Crosses-n-OusTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crosses'n Ous.app/Crosses'n Ous";
 			};
 			name = Debug;
@@ -538,36 +481,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "astemir.eleev.io.Crosses-n-OusTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crosses'n Ous.app/Crosses'n Ous";
-			};
-			name = Release;
-		};
-		A9A603061F07CAEB00EC8B79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = T3K58FE38R;
-				INFOPLIST_FILE = "Crosses'n OusUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "astemir.eleev.io.Crosses-n-OusUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Crosses'n Ous";
-			};
-			name = Debug;
-		};
-		A9A603071F07CAEB00EC8B79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = T3K58FE38R;
-				INFOPLIST_FILE = "Crosses'n OusUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "astemir.eleev.io.Crosses-n-OusUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Crosses'n Ous";
 			};
 			name = Release;
 		};
@@ -597,15 +513,6 @@
 			buildConfigurations = (
 				A9A603031F07CAEB00EC8B79 /* Debug */,
 				A9A603041F07CAEB00EC8B79 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9A603051F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n OusUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9A603061F07CAEB00EC8B79 /* Debug */,
-				A9A603071F07CAEB00EC8B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
