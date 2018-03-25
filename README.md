@@ -10,6 +10,8 @@ Class Tic Tac Toe reincarnation with AI and state machines. The app is ready-mad
 
 <img src="https://user-images.githubusercontent.com/5098753/29486890-28e5c01a-84f9-11e7-8572-8b9f3b3d37a4.gif" width="250">
 
+<img src="https://user-images.githubusercontent.com/5098753/37877311-03f66f6a-3062-11e8-894d-5efee9953692.gif" width="600">
+
 ## Author
 [Astemir Eleev](https://github.com/jVirus)
 
