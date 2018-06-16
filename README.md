@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
 
-## crosses-and-zeros
+## ios-spritekit-tic-tac-toe
 Class Tic Tac Toe reincarnation with AI and state machines. The app is ready-made, using `Sprite` and `Gameplay` Kits. The app supports `Swift 4` with minimum deployment target for `iOS 10.0`. There are several ideas related to `AI` and some gameplay improvemetns that will be added later. Feel free to play around! 🤓
 
 ## How it looks
