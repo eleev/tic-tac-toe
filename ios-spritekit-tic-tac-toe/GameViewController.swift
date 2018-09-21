@@ -50,12 +50,12 @@ class GameViewController: UIViewController {
     // MARK: - Rotation
     
     @objc func rotated() {
-        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+        if UIDevice.current.orientation.isLandscape {
             print(#function + " landscape")
             loadSceneForOrientation(isLandscape: true)
         }
 
-        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+        if UIDevice.current.orientation.isPortrait {
             print(#function + " portrait")
             loadSceneForOrientation(isLandscape: false)
         }
