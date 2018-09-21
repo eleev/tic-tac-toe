@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		A963665B2067EBB4004D39BF /* GameScene-Landscape.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "GameScene-Landscape.sks"; sourceTree = "<group>"; };
-		A9A602D11F07CAEB00EC8B79 /* Crosses'n Ous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crosses'n Ous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A602D11F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-spritekit-tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A602D41F07CAEB00EC8B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A602D81F07CAEB00EC8B79 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		A9A602DA1F07CAEB00EC8B79 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		A9A602E11F07CAEB00EC8B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A602E41F07CAEB00EC8B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9A602E61F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9A602EB1F07CAEB00EC8B79 /* Crosses'n OusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crosses'n OusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A602EB1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-spritekit-tic-tac-toeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosses_n_OusTests.swift; sourceTree = "<group>"; };
 		A9A602F11F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A603091F07CD1800EC8B79 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
@@ -84,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				A9A6031A1F07F6FD00EC8B79 /* .gitignore */,
-				A9A602D31F07CAEB00EC8B79 /* Crosses'n Ous */,
-				A9A602EE1F07CAEB00EC8B79 /* Crosses'n OusTests */,
+				A9A602D31F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */,
+				A9A602EE1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */,
 				A9A602D21F07CAEB00EC8B79 /* Products */,
 				A9A603081F07CD1800EC8B79 /* Frameworks */,
 			);
@@ -94,13 +94,13 @@
 		A9A602D21F07CAEB00EC8B79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9A602D11F07CAEB00EC8B79 /* Crosses'n Ous.app */,
-				A9A602EB1F07CAEB00EC8B79 /* Crosses'n OusTests.xctest */,
+				A9A602D11F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe.app */,
+				A9A602EB1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A9A602D31F07CAEB00EC8B79 /* Crosses'n Ous */ = {
+		A9A602D31F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */ = {
 			isa = PBXGroup;
 			children = (
 				A9A602D41F07CAEB00EC8B79 /* AppDelegate.swift */,
@@ -111,16 +111,16 @@
 				A9A603171F07E85500EC8B79 /* Scenes */,
 				A9A603191F07E87A00EC8B79 /* System */,
 			);
-			path = "Crosses'n Ous";
+			path = "ios-spritekit-tic-tac-toe";
 			sourceTree = "<group>";
 		};
-		A9A602EE1F07CAEB00EC8B79 /* Crosses'n OusTests */ = {
+		A9A602EE1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */ = {
 			isa = PBXGroup;
 			children = (
 				A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */,
 				A9A602F11F07CAEB00EC8B79 /* Info.plist */,
 			);
-			path = "Crosses'n OusTests";
+			path = "ios-spritekit-tic-tac-toeTests";
 			sourceTree = "<group>";
 		};
 		A9A603081F07CD1800EC8B79 /* Frameworks */ = {
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9A602D01F07CAEB00EC8B79 /* Crosses'n Ous */ = {
+		A9A602D01F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9A602FF1F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n Ous" */;
+			buildConfigurationList = A9A602FF1F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "ios-spritekit-tic-tac-toe" */;
 			buildPhases = (
 				A9A602CD1F07CAEB00EC8B79 /* Sources */,
 				A9A602CE1F07CAEB00EC8B79 /* Frameworks */,
@@ -178,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = "Crosses'n Ous";
+			name = "ios-spritekit-tic-tac-toe";
 			productName = "Crosses'n Ous";
-			productReference = A9A602D11F07CAEB00EC8B79 /* Crosses'n Ous.app */;
+			productReference = A9A602D11F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9A602EA1F07CAEB00EC8B79 /* Crosses'n OusTests */ = {
+		A9A602EA1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n OusTests" */;
+			buildConfigurationList = A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "ios-spritekit-tic-tac-toeTests" */;
 			buildPhases = (
 				A9A602E71F07CAEB00EC8B79 /* Sources */,
 				A9A602E81F07CAEB00EC8B79 /* Frameworks */,
@@ -196,9 +196,9 @@
 			dependencies = (
 				A9A602ED1F07CAEB00EC8B79 /* PBXTargetDependency */,
 			);
-			name = "Crosses'n OusTests";
+			name = "ios-spritekit-tic-tac-toeTests";
 			productName = "Crosses'n OusTests";
-			productReference = A9A602EB1F07CAEB00EC8B79 /* Crosses'n OusTests.xctest */;
+			productReference = A9A602EB1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,6 @@
 				TargetAttributes = {
 					A9A602D01F07CAEB00EC8B79 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T3K58FE38R;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -226,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9A602CC1F07CAEB00EC8B79 /* Build configuration list for PBXProject "Crosses'n Ous" */;
+			buildConfigurationList = A9A602CC1F07CAEB00EC8B79 /* Build configuration list for PBXProject "ios-spritekit-tic-tac-toe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,8 +238,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9A602D01F07CAEB00EC8B79 /* Crosses'n Ous */,
-				A9A602EA1F07CAEB00EC8B79 /* Crosses'n OusTests */,
+				A9A602D01F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */,
+				A9A602EA1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +296,7 @@
 /* Begin PBXTargetDependency section */
 		A9A602ED1F07CAEB00EC8B79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9A602D01F07CAEB00EC8B79 /* Crosses'n Ous */;
+			target = A9A602D01F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */;
 			targetProxy = A9A602EC1F07CAEB00EC8B79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,8 +432,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T3K58FE38R;
-				INFOPLIST_FILE = "Crosses'n Ous/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-spritekit-tic-tac-toe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.io.CrossesOus;
@@ -448,8 +447,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T3K58FE38R;
-				INFOPLIST_FILE = "Crosses'n Ous/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-spritekit-tic-tac-toe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.io.CrossesOus;
@@ -471,7 +470,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crosses'n Ous.app/Crosses'n Ous";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-spritekit-tic-tac-toe.app/ios-spritekit-tic-tac-toe";
 			};
 			name = Debug;
 		};
@@ -487,14 +486,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crosses'n Ous.app/Crosses'n Ous";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-spritekit-tic-tac-toe.app/ios-spritekit-tic-tac-toe";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9A602CC1F07CAEB00EC8B79 /* Build configuration list for PBXProject "Crosses'n Ous" */ = {
+		A9A602CC1F07CAEB00EC8B79 /* Build configuration list for PBXProject "ios-spritekit-tic-tac-toe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9A602FD1F07CAEB00EC8B79 /* Debug */,
@@ -503,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9A602FF1F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n Ous" */ = {
+		A9A602FF1F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "ios-spritekit-tic-tac-toe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9A603001F07CAEB00EC8B79 /* Debug */,
@@ -512,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "Crosses'n OusTests" */ = {
+		A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "ios-spritekit-tic-tac-toeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9A603031F07CAEB00EC8B79 /* Debug */,
