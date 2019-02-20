@@ -6,20 +6,26 @@
 //  Copyright © 2017 Astemir Eleev. All rights reserved.
 //
 
-import Foundation
 import GameplayKit
 import SpriteKit
 
-class StartGameState: GKState{
+class StartGameState: GKState {
+    
+    // MARK: - Properties
+    
     var scene: GameScene?
     var winningLabel: SKNode!
     var resetNode: SKNode!
     var boardNode: SKNode!
     
+    // MARK: - Initializers
+    
     init(scene: GameScene){
         self.scene = scene
         super.init()
     }
+
+    // MARK: - Mehtods
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
         return stateClass == ActiveGameState.self
@@ -33,7 +39,7 @@ class StartGameState: GKState{
         self.stateMachine?.enter(ActiveGameState.self)
     }
     
-    func resetGame(){
+    func resetGame() {
         let top_left: BoardCell  = BoardCell(value: .none, node: "//*top_left")
         let top_middle: BoardCell = BoardCell(value: .none, node: "//*top_middle")
         let top_right: BoardCell = BoardCell(value: .none, node: "//*top_right")
@@ -49,8 +55,9 @@ class StartGameState: GKState{
         winningLabel = self.scene?.childNode(withName: "winningLabel")
         winningLabel.isHidden = true
         
-        resetNode = self.scene?.childNode(withName: "Reset")
+        resetNode = self.scene?.childNode(withName: Constants.reset)
         resetNode.isHidden = true
+        resetNode.alpha = 0.0
         
         
         let board = [top_left, top_middle, top_right, middle_left, center, middle_right, bottom_left, bottom_middle, bottom_right]
@@ -59,7 +66,7 @@ class StartGameState: GKState{
         self.scene?.gameBoard = Board(gameboard: board, currentPlayer: currentPlayer)
         
         self.scene?.enumerateChildNodes(withName: "//grid*") { (node, stop) in
-            if let node = node as? SKSpriteNode{
+            if let node = node as? SKSpriteNode {
                 node.removeAllChildren()
             }
         }

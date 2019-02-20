@@ -21,7 +21,6 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
-        debugPrint("GameScene -> didMove")
         
         sceneSetup()
         gameplaySetup()
@@ -36,29 +35,30 @@ class GameScene: SKScene {
             var node: SKSpriteNode
             
             if let name = selectedNode.name {
-                if name == "Reset" || name == "reset_label"{
+                if name == Constants.reset || name == Constants.resetLabel {
                     self.stateMachine.enter(StartGameState.self)
                     return
                 }
             }
             
-            if gameBoard.isPlayerOne(){
-                let cross = SKSpriteNode(imageNamed: "X_symbol")
-                cross.size = CGSize(width: 75, height: 75)
-                cross.zRotation = CGFloat.pi / 4.0
+            if gameBoard.isPlayerOne() {
+                let cross = SKSpriteNode(imageNamed: Constants.exCell)
+                cross.size = CGSize(width: Constants.cellSize, height: Constants.cellSize)
+//                cross.zRotation = CGFloat.pi / 4.0
                 node = cross
-            }
-            else{
-                let circle = SKSpriteNode(imageNamed: "O_symbol")
-                circle.size = CGSize(width: 75, height: 75)
+            } else {
+                let circle = SKSpriteNode(imageNamed: Constants.ouCell)
+                circle.size = CGSize(width: Constants.cellSize, height: Constants.cellSize)
                 node = circle
             }
             
-            for i in 0...8{
-                guard let cellNode: SKSpriteNode = self.childNode(withName: gameBoard.getElementAtBoardLocation(i).node) as? SKSpriteNode else{
-                    return
-                }
-                if selectedNode.name == cellNode.name{
+            node.alpha = 0.0
+            let reveal = SKAction.fadeAlpha(to: 1.0, duration: 0.5)
+            node.run(reveal)
+            
+            for i in 0...8 {
+                guard let cellNode: SKSpriteNode = self.childNode(withName: gameBoard.getElementAtBoardLocation(i).node) as? SKSpriteNode else { return }
+                if selectedNode.name == cellNode.name {
                     cellNode.addChild(node)
                     gameBoard.addPlayerValueAtBoardLocation(i, value: gameBoard.isPlayerOne() ? .x : .o)
                     gameBoard.togglePlayer()
@@ -81,8 +81,7 @@ extension GameScene {
      Sets up the scene. Do all additional initialization logic here related to the scene.
      */
     func sceneSetup() {
-        self.enumerateChildNodes(withName: "//grid*") { (node, stop) in
-            debugPrint("child node is : ", node)
+        self.enumerateChildNodes(withName: Constants.gridSearchRequest) { (node, stop) in
             if let node = node as? SKSpriteNode {
                 node.color = UIColor.clear
             }
@@ -147,7 +146,7 @@ extension GameScene {
         guard let difficultyLabelNode = self.childNode(withName: "Difficulty_level") as? SKLabelNode else {
             fatalError("Could not find Dicculty label of type SKLabelNode")
         }
-        difficultyLabelNode.text = "Difficulty: \(toDifficultyLevel(diffLevel).rawValue)"
+        difficultyLabelNode.text = "\(Constants.difficuly) \(toDifficultyLevel(diffLevel).rawValue)"
     }
     
     /*

@@ -65,9 +65,11 @@ class GameViewController: UIViewController {
     
     private func loadSceneForOrientation(isLandscape: Bool) {
         var scene = GameScene(fileNamed: "GameScene-Portrait")
+        scene?.scaleMode = .aspectFill
         
         if isLandscape {
             scene = GameScene(fileNamed: "GameScene-Landscape")
+            scene?.scaleMode = .aspectFit
         }
         
         guard let unwrappedScene = scene else {
@@ -81,9 +83,6 @@ class GameViewController: UIViewController {
         
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         skView.ignoresSiblingOrder = true
-        
-        /* Set the scale mode to scale to fit the window */
-        unwrappedScene.scaleMode = .aspectFit
         
         skView.presentScene(unwrappedScene)
     }
