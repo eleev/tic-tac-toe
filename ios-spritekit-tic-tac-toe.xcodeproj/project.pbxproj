@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A903811B221D30D000D3BD37 /* TileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = A903811A221D30D000D3BD37 /* TileSet.sks */; };
 		A963665C2067EBB4004D39BF /* GameScene-Landscape.sks in Resources */ = {isa = PBXBuildFile; fileRef = A963665B2067EBB4004D39BF /* GameScene-Landscape.sks */; };
 		A9A602D51F07CAEB00EC8B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A602D41F07CAEB00EC8B79 /* AppDelegate.swift */; };
 		A9A602D91F07CAEB00EC8B79 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9A602D81F07CAEB00EC8B79 /* Actions.sks */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A903811A221D30D000D3BD37 /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
 		A963665B2067EBB4004D39BF /* GameScene-Landscape.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "GameScene-Landscape.sks"; sourceTree = "<group>"; };
 		A9A602D11F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-spritekit-tic-tac-toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A602D41F07CAEB00EC8B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				A9A6030D1F07DBB000EC8B79 /* GameScene-Portrait.sks */,
 				A963665B2067EBB4004D39BF /* GameScene-Landscape.sks */,
 				A9A602D81F07CAEB00EC8B79 /* Actions.sks */,
+				A903811A221D30D000D3BD37 /* TileSet.sks */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				TargetAttributes = {
 					A9A602D01F07CAEB00EC8B79 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5W8256FV33;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -253,6 +257,7 @@
 				A9A6030E1F07DBB000EC8B79 /* GameScene-Portrait.sks in Resources */,
 				A9A602E21F07CAEB00EC8B79 /* Assets.xcassets in Resources */,
 				A9A602E51F07CAEB00EC8B79 /* LaunchScreen.storyboard in Resources */,
+				A903811B221D30D000D3BD37 /* TileSet.sks in Resources */,
 				A9A6031B1F07F6FD00EC8B79 /* .gitignore in Resources */,
 				A9A602D91F07CAEB00EC8B79 /* Actions.sks in Resources */,
 				A963665C2067EBB4004D39BF /* GameScene-Landscape.sks in Resources */,
@@ -436,7 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5W8256FV33;
 				INFOPLIST_FILE = "$(SRCROOT)/ios-spritekit-tic-tac-toe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,7 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5W8256FV33;
 				INFOPLIST_FILE = "$(SRCROOT)/ios-spritekit-tic-tac-toe/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
