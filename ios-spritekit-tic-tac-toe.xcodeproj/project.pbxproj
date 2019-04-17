@@ -16,7 +16,6 @@
 		A9A602E01F07CAEB00EC8B79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A602DE1F07CAEB00EC8B79 /* Main.storyboard */; };
 		A9A602E21F07CAEB00EC8B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A602E11F07CAEB00EC8B79 /* Assets.xcassets */; };
 		A9A602E51F07CAEB00EC8B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A602E31F07CAEB00EC8B79 /* LaunchScreen.storyboard */; };
-		A9A602F01F07CAEB00EC8B79 /* Crosses_n_OusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */; };
 		A9A6030A1F07CD1800EC8B79 /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A603091F07CD1800EC8B79 /* GameplayKit.framework */; };
 		A9A6030C1F07CD2900EC8B79 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */; };
 		A9A6030E1F07DBB000EC8B79 /* GameScene-Portrait.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9A6030D1F07DBB000EC8B79 /* GameScene-Portrait.sks */; };
@@ -26,16 +25,6 @@
 		A9A603161F07E31F00EC8B79 /* ActiveGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A603151F07E31F00EC8B79 /* ActiveGameState.swift */; };
 		A9A6031B1F07F6FD00EC8B79 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9A6031A1F07F6FD00EC8B79 /* .gitignore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A9A602EC1F07CAEB00EC8B79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9A602C91F07CAEB00EC8B79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9A602D01F07CAEB00EC8B79;
-			remoteInfo = "Crosses'n Ous";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A903811A221D30D000D3BD37 /* TileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSet.sks; sourceTree = "<group>"; };
@@ -49,9 +38,6 @@
 		A9A602E11F07CAEB00EC8B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9A602E41F07CAEB00EC8B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9A602E61F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9A602EB1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-spritekit-tic-tac-toeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crosses_n_OusTests.swift; sourceTree = "<group>"; };
-		A9A602F11F07CAEB00EC8B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A603091F07CD1800EC8B79 /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
 		A9A6030B1F07CD2900EC8B79 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		A9A6030D1F07DBB000EC8B79 /* GameScene-Portrait.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "GameScene-Portrait.sks"; sourceTree = "<group>"; };
@@ -72,13 +58,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A602E81F07CAEB00EC8B79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +66,6 @@
 			children = (
 				A9A6031A1F07F6FD00EC8B79 /* .gitignore */,
 				A9A602D31F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */,
-				A9A602EE1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */,
 				A9A602D21F07CAEB00EC8B79 /* Products */,
 				A9A603081F07CD1800EC8B79 /* Frameworks */,
 			);
@@ -97,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				A9A602D11F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe.app */,
-				A9A602EB1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,15 +91,6 @@
 				A9A603191F07E87A00EC8B79 /* System */,
 			);
 			path = "ios-spritekit-tic-tac-toe";
-			sourceTree = "<group>";
-		};
-		A9A602EE1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */ = {
-			isa = PBXGroup;
-			children = (
-				A9A602EF1F07CAEB00EC8B79 /* Crosses_n_OusTests.swift */,
-				A9A602F11F07CAEB00EC8B79 /* Info.plist */,
-			);
-			path = "ios-spritekit-tic-tac-toeTests";
 			sourceTree = "<group>";
 		};
 		A9A603081F07CD1800EC8B79 /* Frameworks */ = {
@@ -186,24 +154,6 @@
 			productReference = A9A602D11F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9A602EA1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "ios-spritekit-tic-tac-toeTests" */;
-			buildPhases = (
-				A9A602E71F07CAEB00EC8B79 /* Sources */,
-				A9A602E81F07CAEB00EC8B79 /* Frameworks */,
-				A9A602E91F07CAEB00EC8B79 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9A602ED1F07CAEB00EC8B79 /* PBXTargetDependency */,
-			);
-			name = "ios-spritekit-tic-tac-toeTests";
-			productName = "Crosses'n OusTests";
-			productReference = A9A602EB1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,27 +161,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Astemir Eleev";
 				TargetAttributes = {
 					A9A602D01F07CAEB00EC8B79 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5W8256FV33;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
-					};
-					A9A602EA1F07CAEB00EC8B79 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T3K58FE38R;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A9A602D01F07CAEB00EC8B79;
 					};
 				};
 			};
 			buildConfigurationList = A9A602CC1F07CAEB00EC8B79 /* Build configuration list for PBXProject "ios-spritekit-tic-tac-toe" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -243,7 +186,6 @@
 			projectRoot = "";
 			targets = (
 				A9A602D01F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */,
-				A9A602EA1F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,13 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A602E91F07CAEB00EC8B79 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -288,23 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9A602E71F07CAEB00EC8B79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9A602F01F07CAEB00EC8B79 /* Crosses_n_OusTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A9A602ED1F07CAEB00EC8B79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9A602D01F07CAEB00EC8B79 /* ios-spritekit-tic-tac-toe */;
-			targetProxy = A9A602EC1F07CAEB00EC8B79 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A9A602DE1F07CAEB00EC8B79 /* Main.storyboard */ = {
@@ -330,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -389,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -447,8 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.io.CrossesOus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -462,40 +382,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.io.CrossesOus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		A9A603031F07CAEB00EC8B79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = T3K58FE38R;
-				INFOPLIST_FILE = "Crosses'n OusTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "astemir.eleev.io.Crosses-n-OusTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-spritekit-tic-tac-toe.app/ios-spritekit-tic-tac-toe";
-			};
-			name = Debug;
-		};
-		A9A603041F07CAEB00EC8B79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = T3K58FE38R;
-				INFOPLIST_FILE = "Crosses'n OusTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "astemir.eleev.io.Crosses-n-OusTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-spritekit-tic-tac-toe.app/ios-spritekit-tic-tac-toe";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -516,15 +403,6 @@
 			buildConfigurations = (
 				A9A603001F07CAEB00EC8B79 /* Debug */,
 				A9A603011F07CAEB00EC8B79 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9A603021F07CAEB00EC8B79 /* Build configuration list for PBXNativeTarget "ios-spritekit-tic-tac-toeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9A603031F07CAEB00EC8B79 /* Debug */,
-				A9A603041F07CAEB00EC8B79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
