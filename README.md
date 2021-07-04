@@ -6,7 +6,7 @@
 [![Framework](https://img.shields.io/badge/framework-GameplayKit-purple.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 17/April/2019.**
+**Last Update: 04/July/2021.**
 
 ![](logo-spritekit_tic-tac-toe.png)
 
